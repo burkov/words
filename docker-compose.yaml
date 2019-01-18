@@ -1,0 +1,9 @@
+version: "3"
+services:
+  words:
+    build: .
+    ports:
+      - 3989:3989
+    volumes:
+      - ./mounted:/home/words/mounted
+    restart: always
